@@ -12,6 +12,8 @@ const connectDatabase = () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
+      connectTimeoutMS: 5000,
+      socketTimeoutMS: 5000,
     })
     .then((con) => {
       console.log(
